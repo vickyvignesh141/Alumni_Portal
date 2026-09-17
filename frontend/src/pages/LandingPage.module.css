@@ -1,0 +1,561 @@
+.page {
+  min-height: 100vh;
+  background: #faf9f6;
+  color: #172033;
+  font-family: Inter, Arial, sans-serif;
+}
+
+/* ================= NAVBAR ================= */
+
+.navbar {
+  height: 78px;
+  padding: 0 7%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: rgba(250, 249, 246, 0.92);
+  border-bottom: 1px solid #e8e5de;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  backdrop-filter: blur(12px);
+}
+
+.logoSection {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo {
+  width: 42px;
+  height: 42px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #172033;
+  color: white;
+  font-weight: 800;
+}
+
+.logoSection h2 {
+  margin: 0;
+  font-size: 17px;
+}
+
+.logoSection span {
+  font-size: 11px;
+  color: #777;
+}
+
+.navLinks {
+  display: flex;
+  gap: 34px;
+}
+
+.navLinks a,
+.footerLinks a {
+  text-decoration: none;
+  color: #596070;
+  font-size: 14px;
+  transition: 0.2s;
+}
+
+.navLinks a:hover,
+.footerLinks a:hover {
+  color: #172033;
+}
+
+.navButtons {
+  display: flex;
+  gap: 10px;
+}
+
+.loginBtn,
+.registerBtn {
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.loginBtn {
+  background: transparent;
+  border: 1px solid #d9d6cf;
+  color: #172033;
+}
+
+.registerBtn {
+  background: #172033;
+  border: 1px solid #172033;
+  color: white;
+}
+
+/* ================= HERO ================= */
+
+.hero {
+  min-height: 620px;
+  padding: 80px 8%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+  overflow: hidden;
+}
+
+.heroContent {
+  max-width: 650px;
+}
+
+.badge {
+  display: inline-block;
+  padding: 7px 12px;
+  border: 1px solid #d8d5cc;
+  border-radius: 30px;
+  font-size: 11px;
+  letter-spacing: 1.5px;
+  font-weight: 700;
+  color: #68645b;
+}
+
+.hero h1 {
+  margin: 22px 0 18px;
+  font-size: clamp(48px, 6vw, 78px);
+  line-height: 0.98;
+  letter-spacing: -3px;
+}
+
+.hero h1 span {
+  color: #b06c35;
+}
+
+.heroContent > p {
+  max-width: 590px;
+  color: #686d78;
+  line-height: 1.8;
+  font-size: 16px;
+}
+
+.heroButtons {
+  display: flex;
+  gap: 14px;
+  margin-top: 30px;
+}
+
+.primaryBtn,
+.secondaryBtn {
+  padding: 14px 22px;
+  border-radius: 9px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.primaryBtn {
+  border: none;
+  background: #172033;
+  color: white;
+}
+
+.secondaryBtn {
+  background: white;
+  border: 1px solid #dcd9d1;
+  color: #172033;
+}
+
+.stats {
+  display: flex;
+  gap: 50px;
+  margin-top: 55px;
+}
+
+.stats div {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.stats strong {
+  font-size: 23px;
+}
+
+.stats span {
+  font-size: 12px;
+  color: #858585;
+}
+
+/* ================= HERO VISUAL ================= */
+
+.heroVisual {
+  width: 440px;
+  height: 440px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.circleOuter {
+  width: 380px;
+  height: 380px;
+  border: 1px solid #ddd8ce;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.circleMiddle {
+  width: 285px;
+  height: 285px;
+  border: 1px dashed #cfc8bb;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.circleInner {
+  width: 185px;
+  height: 185px;
+  border-radius: 50%;
+  background: #172033;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 25px 60px rgba(23, 32, 51, 0.2);
+}
+
+.circleInner span {
+  font-size: 48px;
+}
+
+.circleInner p {
+  margin: 8px 0 0;
+  font-size: 13px;
+}
+
+.floatingCard {
+  position: absolute;
+  padding: 13px 16px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: white;
+  border: 1px solid #e5e1d8;
+  border-radius: 12px;
+  box-shadow: 0 12px 35px rgba(20, 25, 35, 0.08);
+}
+
+.floatingCard > span {
+  font-size: 22px;
+}
+
+.floatingCard div {
+  display: flex;
+  flex-direction: column;
+}
+
+.floatingCard strong {
+  font-size: 12px;
+}
+
+.floatingCard small {
+  margin-top: 3px;
+  color: #8a8a8a;
+  font-size: 10px;
+}
+
+.cardOne {
+  top: 45px;
+  left: 0;
+}
+
+.cardTwo {
+  right: -5px;
+  top: 150px;
+}
+
+.cardThree {
+  bottom: 35px;
+  left: 40px;
+}
+
+/* ================= MODULES ================= */
+
+.modulesSection {
+  padding: 100px 8%;
+  background: white;
+}
+
+.sectionHeading {
+  text-align: center;
+  max-width: 650px;
+  margin: 0 auto 55px;
+}
+
+.sectionHeading > span {
+  font-size: 11px;
+  letter-spacing: 2px;
+  font-weight: 800;
+  color: #b06c35;
+}
+
+.sectionHeading h2 {
+  margin: 12px 0;
+  font-size: 40px;
+  letter-spacing: -1px;
+}
+
+.sectionHeading p {
+  color: #777d88;
+  line-height: 1.7;
+}
+
+.moduleGrid {
+  max-width: 1150px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.moduleCard {
+  min-height: 205px;
+  padding: 25px;
+  border: 1px solid #e8e5df;
+  border-radius: 16px;
+  position: relative;
+  transition: 0.25s ease;
+}
+
+.moduleCard:hover {
+  transform: translateY(-5px);
+  border-color: #c9c2b6;
+  box-shadow: 0 15px 35px rgba(20, 25, 35, 0.07);
+}
+
+.moduleIcon {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  background: #f4f1eb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 23px;
+  margin-bottom: 22px;
+}
+
+.moduleCard h3 {
+  margin: 0 0 9px;
+  font-size: 17px;
+}
+
+.moduleCard p {
+  margin: 0;
+  color: #777d88;
+  font-size: 13px;
+  line-height: 1.7;
+  max-width: 290px;
+}
+
+.arrowButton {
+  position: absolute;
+  right: 20px;
+  top: 25px;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  border: 1px solid #dedbd4;
+  background: white;
+  cursor: pointer;
+}
+
+/* ================= CTA ================= */
+
+.cta {
+  margin: 80px 8%;
+  padding: 60px;
+  border-radius: 22px;
+  background: #172033;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+}
+
+.cta span {
+  font-size: 10px;
+  letter-spacing: 2px;
+  color: #c5c1b8;
+}
+
+.cta h2 {
+  max-width: 650px;
+  margin: 12px 0;
+  font-size: 36px;
+}
+
+.cta p {
+  max-width: 600px;
+  color: #b7bbc4;
+  line-height: 1.7;
+}
+
+.ctaButton {
+  white-space: nowrap;
+  padding: 14px 22px;
+  border: none;
+  border-radius: 8px;
+  background: white;
+  color: #172033;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+/* ================= FOOTER ================= */
+
+.footer {
+  padding: 45px 8%;
+  border-top: 1px solid #e6e2da;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.footer h3 {
+  margin: 0 0 5px;
+}
+
+.footer p {
+  margin: 0;
+  color: #858585;
+  font-size: 12px;
+}
+
+.footerLinks {
+  display: flex;
+  gap: 25px;
+}
+
+.copyright {
+  white-space: nowrap;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 1000px) {
+  .navLinks {
+    display: none;
+  }
+
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding-top: 60px;
+  }
+
+  .heroContent > p {
+    margin: auto;
+  }
+
+  .heroButtons,
+  .stats {
+    justify-content: center;
+  }
+
+  .heroVisual {
+    width: 400px;
+  }
+
+  .moduleGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .cta {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+@media (max-width: 650px) {
+  .navbar {
+    padding: 0 5%;
+  }
+
+  .navButtons {
+    display: none;
+  }
+
+  .hero {
+    padding: 55px 5%;
+  }
+
+  .hero h1 {
+    font-size: 48px;
+  }
+
+  .heroVisual {
+    width: 330px;
+    height: 330px;
+  }
+
+  .circleOuter {
+    width: 290px;
+    height: 290px;
+  }
+
+  .circleMiddle {
+    width: 220px;
+    height: 220px;
+  }
+
+  .circleInner {
+    width: 145px;
+    height: 145px;
+  }
+
+  .circleInner span {
+    font-size: 35px;
+  }
+
+  .floatingCard {
+    transform: scale(0.8);
+  }
+
+  .moduleGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .modulesSection {
+    padding: 70px 5%;
+  }
+
+  .sectionHeading h2 {
+    font-size: 32px;
+  }
+
+  .cta {
+    margin: 50px 5%;
+    padding: 40px 25px;
+  }
+
+  .cta h2 {
+    font-size: 28px;
+  }
+
+  .footer {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .stats {
+    gap: 25px;
+  }
+}
